@@ -220,38 +220,69 @@ button:hover {
   color: #333; /* Darker text color */
 }
 
-.about_content p {
+.about_content {
   font-size: 1.2rem;
   line-height: 1.6;
   margin-bottom: 20px;
   color: #555; /* Slightly lighter text color */
 }
+.about_content .bio {
+  font-size: 14px;
+}
+.about_contact {
+  display: inline-flex;
+  gap: 100px; /* Reduce the gap between the left and right sections */
+  flex-wrap: wrap; /* Allow wrapping if the content overflows */
+  justify-content: space-between; /* Add space between the left and right sides */
+  margin-top: 10px; /* Reduce spacing above the contact section */
+}
 
 .about_contact p {
   font-size: 1rem;
-  margin-bottom: 10px;
-  color: #666; /* Even lighter text color for contact details */
+  line-height: 1.5;
+  color: #555; /* Slightly lighter text color */
+  margin: 5px 0; /* Reduce spacing between paragraphs */
+}
+
+.about_social {
+  display: flex; /* Arrange icons in a row */
+  align-items: center; /* Vertically center the icons */
+  /* Center the icons horizontally */
+  margin-top: 20px; /* Add spacing above the social icons */
 }
 
 .about_social a {
-  margin: 0 10px;
-  font-size: 1.5rem;
-  color: #333;
-  transition: color 0.3s ease;
-  text-decoration: none; /* Remove underline from link icons */
+  margin: 0 10px; /* Add spacing between icons */
+  font-size: 1.5rem; /* Adjust icon size */
+  color: #0b69b6; /* Default icon color */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease; /* Smooth hover effect */
 }
 
 .about_social a:hover {
   color: #00bcd4; /* Highlight color on hover */
 }
 
-.hire_me,
-.about_content button {
+.about_buttons {
+  margin-top: 25px;
+}
+.hire_me {
   background-color: #00bcd4;
   color: #fff;
   border: none;
   padding: 10px 20px;
-  border-radius: 5px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+.download {
+  background-color: #00d49fe7;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
   cursor: pointer;
   font-size: 1rem;
   margin-right: 10px;

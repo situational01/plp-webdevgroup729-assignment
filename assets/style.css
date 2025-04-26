@@ -130,9 +130,12 @@ button:hover {
 }
 
 .hero__content h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  color: #00bcd4; /* Highlighted secondary text */
+  font-size: 4rem;
+  margin-bottom: -20px;
+  color: transparent;
+  -webkit-text-stroke: 2px white;
+  text-stroke: 2px white;
+  font-family: "Poppins", sans-serif;
 }
 
 .hero__content p {
@@ -183,7 +186,82 @@ button:hover {
   height: auto; /* Maintain aspect ratio */
 }
 
-/* About */
+/* About Section */
+.about {
+  display: flex;
+  align-items: center; /* Vertically center the content */
+  justify-content: center; /* Horizontally center the content */
+  padding: 50px 20px; /* Add padding around the section */
+  background-color: #f9f9f9; /* Light background color */
+}
+
+.about_image {
+  flex: 1; /* Take up equal space */
+  max-width: 50%; /* Limit the width of the image */
+  text-align: center; /* Center the image horizontally */
+}
+
+.about_image img {
+  max-width: 100%; /* Ensure the image scales properly */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Optional: Add rounded corners */
+}
+
+.about_content {
+  flex: 1; /* Take up equal space */
+  max-width: 50%; /* Limit the width of the content */
+  padding: 20px; /* Add padding inside the content */
+  text-align: left; /* Align text to the left */
+}
+
+.about_content h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333; /* Darker text color */
+}
+
+.about_content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #555; /* Slightly lighter text color */
+}
+
+.about_contact p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #666; /* Even lighter text color for contact details */
+}
+
+.about_social a {
+  margin: 0 10px;
+  font-size: 1.5rem;
+  color: #333;
+  transition: color 0.3s ease;
+  text-decoration: none; /* Remove underline from link icons */
+}
+
+.about_social a:hover {
+  color: #00bcd4; /* Highlight color on hover */
+}
+
+.hire_me,
+.about_content button {
+  background-color: #00bcd4;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.hire_me:hover,
+.about_content button:hover {
+  background-color: #008c9e; /* Darker shade on hover */
+}
 
 /* Responsive Styles */
 @media (max-width: 1024px) {

@@ -374,6 +374,128 @@ button:hover {
 .more-services a:hover {
   color: #000000;
 }
+/* Skills section */
+
+.skills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 5%;
+  gap: 50px;
+}
+
+.skills-images {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.skills-images img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.skills-images .top-image {
+  height: 150px; /* Adjust height as needed */
+}
+.skills-images .bottom-image {
+  height: 300px; /* bottom part height */
+  object-position: bottom; /* show the bottom of the full image */
+}
+.skills-content {
+  flex: 1;
+}
+
+.skills-content h5 {
+  color: #999;
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+.skills-paragraph {
+  margin-top: 50px;
+}
+.skills-content h2 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.skills-content p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #666;
+  margin-bottom: 40px;
+  max-width: 500px;
+}
+
+.skill {
+  margin-bottom: 25px;
+}
+
+.skill h4 {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.progress {
+  background: #eee;
+  height: 6px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background: #00b894;
+  width: 0; /* Start with 0 width */
+}
+
+/* Animation for progress bar */
+@keyframes loadBar {
+  to {
+    width: var(--progress-width);
+  }
+}
+
+/* Optional: Smooth progress animation individually */
+.skill:nth-child(1) .progress-bar {
+  width: 90%;
+}
+.skill:nth-child(2) .progress-bar {
+  width: 85%;
+}
+.skill:nth-child(3) .progress-bar {
+  width: 60%;
+}
+.skill:nth-child(4) .progress-bar {
+  width: 80%;
+}
+
+/* Responsive for mobile screens */
+@media (max-width: 768px) {
+  .skills {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .skills-images {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .skills-images img {
+    width: 45%;
+  }
+
+  .skills-content p {
+    margin: 0 auto 30px;
+  }
+}
 
 /* Responsive Styles */
 @media (max-width: 1024px) {

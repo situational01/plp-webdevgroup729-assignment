@@ -1,3 +1,6 @@
+* {
+  scroll-behavior: smooth;
+}
 /* General Styles */
 body {
   margin: 0;
@@ -91,11 +94,18 @@ button:hover {
   background-color: #008c9e;
 }
 
-.nav__link i {
-  color: #fff;
+.nav__link {
+  text-decoration: none; /* Remove underline */
+  color: #fff; /* Ensure the icon color is white */
   font-size: 1.2rem;
   cursor: pointer;
-  margin-left: 10px;
+  margin-left: 20px; /* Move the icon to the right */
+}
+
+.nav__link i {
+  color: #fff; /* Ensure the icon color is white */
+  font-size: 1.2rem;
+  cursor: pointer;
 }
 
 .hero {
@@ -294,6 +304,77 @@ button:hover {
   background-color: #008c9e; /* Darker shade on hover */
 }
 
+/* services */
+.services {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #e3e5e7c4; /* Light greyish background */
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.services-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.service-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 30px 20px;
+  width: 280px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.icon {
+  margin-bottom: 20px;
+}
+
+.icon img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.service-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.service-card p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.more-services {
+  margin-top: 30px;
+}
+
+.more-services a {
+  text-decoration: none;
+  color: #047857;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.more-services a:hover {
+  color: #065f46;
+}
+
 /* Responsive Styles */
 @media (max-width: 1024px) {
   .hero {
@@ -406,5 +487,53 @@ button:hover {
 
   .hero__image img {
     max-width: 90%; /* Scale image for smaller screens */
+  }
+}
+
+/* Services responsiveness */
+@media (max-width: 768px) {
+  .services-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-card {
+    width: 90%;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .service-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .service-card p {
+    font-size: 0.95rem;
+  }
+
+  .icon img {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .service-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .service-card p {
+    font-size: 0.9rem;
+  }
+
+  .icon img {
+    width: 40px;
+    height: 40px;
   }
 }

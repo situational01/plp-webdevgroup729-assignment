@@ -714,3 +714,31 @@ h3 {
     height: 40px;
   }
 }
+
+/* our numbers section */
+.numbers {
+  padding: 50px 0;
+  background: #fff;
+}
+
+.our-numbers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  text-align: center;
+}
+
+.our-numbers div h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+.our-numbers div p {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #666;
+  text-transform: capitalize;
+}

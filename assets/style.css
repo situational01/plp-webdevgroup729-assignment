@@ -316,6 +316,7 @@ button:hover {
   text-align: center;
   padding: 50px 20px;
   background-color: #e0e2e4c4; /* Light greyish background */
+  gap: 1px;
 }
 
 .section-title {
@@ -753,7 +754,7 @@ h3 {
 /* My Success Work */
 .success {
   padding: 60px 20px;
-  background-color: #fff;
+  background-color: #9b9a9a70;
   text-align: center;
 }
 
@@ -787,4 +788,31 @@ h3 {
 
 .success__grid img:hover {
   transform: scale(1.05);
+}
+
+/* certification */
+.certifications {
+  background-color: #3b8168; /* Green background */
+  padding: 40px 20px;
+}
+
+.certifications__container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap; /* In case of smaller screens */
+}
+
+.certifications__container img {
+  max-width: 150px;
+  height: auto;
+  filter: brightness(0) invert(1); /* Make logos white */
+  opacity: 0.9;
+}
+
+.certifications__container img:hover {
+  transform: scale(1.05);
+  opacity: 1;
 }

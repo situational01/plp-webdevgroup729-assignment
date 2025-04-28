@@ -468,6 +468,12 @@ button:hover {
   flex-wrap: wrap;
   gap: 40px;
 }
+.service-box img {
+  width: 50px; /* Set a consistent width */
+  height: 50px; /* Set a consistent height */
+  object-fit: contain; /* Ensure the image scales properly without distortion */
+  margin-right: 10px; /* Add spacing between the image and the text */
+}
 .service-box,
 img,
 h3 {

@@ -3,6 +3,7 @@ View Live Site: https://situational01.github.io/plp-webdevgroup729-assignment/
 
 📄 Project Overview
 This project is a portfolio website built as part of the PLP Web Development course assignment for Group 729. It demonstrates foundational skills in HTML, CSS, and basic JavaScript.
+# Note: The site is still under development and not yet fully complete.
 
 📁 Folder Structure
 index.html: The main webpage of the portfolio.

@@ -186,14 +186,21 @@ button:hover {
 }
 
 .hero__image {
-  flex: 1; /* Take up equal space */
-  max-width: 50%; /* Limit the width of the image */
-  text-align: center; /* Center the image horizontally */
+  flex: 1;
+  max-width: 50%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero__image img {
-  max-width: 100%; /* Ensure the image scales properly */
-  height: auto; /* Maintain aspect ratio */
+  max-width: 400px; /* Limit size */
+  height: auto;
+  object-fit: cover;
+  margin-top: 20px; /* Push down a little */
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.5)); /* Soft shadow around */
+  animation: float 4s ease-in-out infinite; /* Optional: floating effect */
 }
 
 /* About Section */

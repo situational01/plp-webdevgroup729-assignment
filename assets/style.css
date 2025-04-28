@@ -749,3 +749,42 @@ h3 {
   color: #666;
   text-transform: capitalize;
 }
+
+/* My Success Work */
+.success {
+  padding: 60px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.success__container {
+  max-width: 1000px; /* To center everything nicely */
+  margin: 0 auto;
+}
+
+.success h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.success__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Exactly 3 images per row */
+  gap: 20px; /* Space between the images */
+  align-items: center;
+  justify-content: center;
+}
+
+.success__grid img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.success__grid img:hover {
+  transform: scale(1.05);
+}

@@ -1,8 +1,9 @@
-// document.addEventListener("DOMContentLoaded", () => {
-//   const hamburger = document.querySelector(".hamburger");
-//   const navLinks = document.querySelector(".nav-links");
+document.addEventListener("DOMContentLoaded", () => {
+  const hamburger = document.querySelector(".hamburger");
+  const navLinks = document.querySelector(".nav-links");
 
-//   hamburger.addEventListener("click", () => {
-//     navLinks.classList.toggle("active"); // Toggle the "active" class
-//   });
-// });
+  // Toggle the navigation menu
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+});

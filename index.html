@@ -18,16 +18,27 @@
           <div class="logo">
             <a href="#">UI Portfolio</a>
           </div>
-          <button class="hamburger" aria-label="Toggle navigation">
-            <i class="ri-menu-line"></i>
-          </button>
           <ul class="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
-            <li><a href="#blog">Blog</a></li>
+            <li class="dropdown__item">
+              <div class="nav__link">
+                <a href="#blog"> Blog </a
+                ><i class="ri-arrow-down-s-line dropdown__arrow"></i>
+              </div>
+            </li>
+            <li class="dropdown__item">
+              <div class="nav__link">
+                Pages<i class="ri-arrow-down-s-line dropdown__arrow"></i>
+              </div>
+            </li>
             <li><a href="#contact">Contact</a></li>
           </ul>
+          <button>Hire Me</button>
+          <a href="#" class="nav__link">
+            <i class="ri-search-line"></i>
+          </a>
         </div>
       </nav>
       <section class="hero" id="home">

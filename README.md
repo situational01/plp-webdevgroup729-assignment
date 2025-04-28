@@ -39,18 +39,5 @@ Smooth navigation
 
 Clean and organized layout
 
-👤 Authors
-# victor	orisafele
-# leon	muriithi
-# dexter	kimathi
-# carren	dede
-# clen	bongane
-# silvia	mwende
-# rachael	njogu
-# lonyori	ole-meiludie
-# faith	nganga
-# joseph	makenzi
-# joshua	juma
-# samuel otia
 
 

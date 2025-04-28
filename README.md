@@ -39,18 +39,17 @@ Smooth navigation
 Clean and organized layout
 
 👤 Authors
-victor	orisafele
-leon	muriithi
-dexter	kimathi
-carren	dede
-clen	bongane
-silvia	mwende
-rachael	njogu
-lonyori	ole-meiludie
-faith	nganga
-joseph	makenzi
-joshua	juma
+# victor	orisafele
+# leon	muriithi
+# dexter	kimathi
+# carren	dede
+# clen	bongane
+# silvia	mwende
+# rachael	njogu
+# lonyori	ole-meiludie
+# faith	nganga
+# joseph	makenzi
+# joshua	juma
+# samuel otia
 
-samuel otia
 
-the link to the portfolio: https://situational01.github.io/plp-webdevgroup729-assignment/
